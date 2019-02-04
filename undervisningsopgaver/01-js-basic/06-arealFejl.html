@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        let længde = prompt("Angiv længde");
+        let bredde = prompt("Angiv bredde");
+
+        function areal(l, b) {
+            let a = (l * b);
+            if (a == 0) {
+                return (`Husk Lændge og bredde skal være et tal større end 0. \n Prøv igen`);
+            } else if (isNaN(a)) {
+                return (`Fejl \n Skriv kun tal`);
+            } else {
+                return(`Arealet er ${a}. \n Har du brug for et nyt areal?`);
+            }
+        }
+
+
+        let resultat = areal(længde, bredde);
+
+        confirm(resultat);
+
+        if (confirm) {
+            location.reload();
+        }
+
+
+    </script>
+</body>
+
+</html>

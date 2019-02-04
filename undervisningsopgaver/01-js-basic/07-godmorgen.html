@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+
+let now = new Date().getHours();
+
+if (now >5 && now <10) {
+now = "Godmorgen";
+} else if(now >10 && now <18) {
+now = "Goddag";
+} else if(now >18 && now <24) {
+now = "Godaften";}
+else if (now >24 && now <5) {
+now = "Godnat";}
+
+
+
+alert(now);
+
+
+
+    </script>
+</body>
+
+</html>
